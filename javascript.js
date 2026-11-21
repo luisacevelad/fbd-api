@@ -13,7 +13,7 @@ function cargarComentarios() {
             if (!data || data.length === 0) {
 
                 container.innerHTML =
-                    '<p>No hay comentarios aÃºn. Â¡SÃ© el primero!</p>';
+                    '<p>No hay comentarios aún. ¡Sé el primero!</p>';
 
                 return;
             }
@@ -36,7 +36,7 @@ function cargarComentarios() {
                     ">
 
                         <strong>
-                            ${c.usuario || 'AnÃ³nimo'}
+                            ${c.usuario || 'Anónimo'}
                         </strong>
 
                         <span style="
@@ -57,7 +57,7 @@ function cargarComentarios() {
                         color:#f5b301;
                         font-size:18px;
                     ">
-                        ${'â­'.repeat(c.calificacion || 0)}
+                        ${'⭐'.repeat(c.calificacion || 0)}
                     </div>
 
                     <div>
@@ -95,7 +95,7 @@ function enviarComentario() {
             {
                 type: "error",
                 location: "page",
-                message: "El comentario no puede estar vacÃ­o.",
+                message: "El comentario no puede estar vacío.",
                 unsafe: false
             }
         ]);
@@ -111,7 +111,7 @@ function enviarComentario() {
             {
                 type: "error",
                 location: "page",
-                message: "La calificaciÃ³n debe estar entre 1 y 5.",
+                message: "La calificación debe estar entre 1 y 5.",
                 unsafe: false
             }
         ]);
