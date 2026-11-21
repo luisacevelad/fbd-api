@@ -1,4 +1,4 @@
-const API_BASE = 'taller3-53ey.onrender.com';
+const API_BASE = 'https://fbd-api-cvy5.onrender.com/bares';
 const barId = parseInt(apex.item('P_BAR_ID').getValue());
 
 function cargarComentarios() {
